@@ -1,10 +1,10 @@
 // app.js or wherever you configure your Express.js app
-const cloudinary = require('cloudinary').v2;
+const cloudinary = require("cloudinary").v2;
 
 cloudinary.config({
-  cloud_name: 'dofzdulgj',
-  api_key: '976411492644911',
-  api_secret: 'PphiifhrOwC40H3MzQRbz9D_08E'
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
 });
 
-module.exports = {cloudinary}
+module.exports = { cloudinary };

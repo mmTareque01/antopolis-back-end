@@ -5,7 +5,7 @@ const createCategoryService = (data) => {
 };
 
 const getAllCaretoriesService = () => {
-  return AnimalCategory.find({}, "name id");
+  return AnimalCategory.find({}, "name id category_id");
 };
 
 module.exports = { createCategoryService, getAllCaretoriesService };
